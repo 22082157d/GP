@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adminpage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+      body {
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+      }
+      h1 {
+        margin-top: 20px;
+        text-align: center;
+      }
+      h4 {
+        text-align: left;
+        margin-left: 20px;
+      }
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        background-color: black;
+        color: white;
+        padding: 10px 0;
+      }
+      .btn-group {
+        justify-content: flex-start;
+      }
+      .btn {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Admin Page</h1>
+    <h4 id="greeting"></h4>
+    <button id="eventButton" class="btn btn-secondary">Add Event</button>
+    <button id="eventsPageButton" class="btn btn-secondary">Manage Events</button>
+    <button id="usersButton" class="btn btn-secondary">Users</button>
+    <button id="accessSeatsButton" class="btn btn-secondary">Manage Seats</button>
+    <button id="logoutButton" class="btn btn-primary">Logout</button>
+
+    <footer>
+      <p>22082157D Kwan Cheuk Lim - EIE4432 Group Project</p>
+      <p id="date-time"></p>
+    </footer>
+
+    <script>
+      const dateTimeElement = document.getElementById('date-time');
+      const now = new Date();
+      dateTimeElement.textContent = now.toLocaleString();
+    </script>
+    <script src="js/admin.js"></script>
+  </body>
+</html>

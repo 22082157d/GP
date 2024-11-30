@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinema Seat Selection</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        margin-bottom: 20px;
+      }
+      .seat {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        display: inline-block;
+        cursor: pointer;
+        background-color: #f0f0f0;
+        transition: background-color 0.3s;
+      }
+      .seat.selected {
+        background-color: #28a745; /* Green for selected */
+      }
+      .seat.confirmed {
+        background-color: #dc3545; /* Red for confirmed */
+        cursor: not-allowed; /* Change cursor to indicate it's not clickable */
+      }
+      .seat-row {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+      #selectedSeats {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Select Your Seats</h1>
+
+    <div id="seatLayout">
+      <div class="seat-row">
+        <div class="seat" data-seat="A1"></div>
+        <div class="seat" data-seat="A2"></div>
+        <div class="seat" data-seat="A3"></div>
+        <div class="seat" data-seat="A4"></div>
+      </div>
+      <div class="seat-row">
+        <div class="seat" data-seat="B1"></div>
+        <div class="seat" data-seat="B2"></div>
+        <div class="seat" data-seat="B3"></div>
+        <div class="seat" data-seat="B4"></div>
+      </div>
+      <div class="seat-row">
+        <div class="seat" data-seat="C1"></div>
+        <div class="seat" data-seat="C2"></div>
+        <div class="seat" data-seat="C3"></div>
+        <div class="seat" data-seat="C4"></div>
+      </div>
+    </div>
+
+    <div id="selectedSeats">
+      <h4>Your Selected Seats:</h4>
+      <p id="selectedSeatsList">None</p>
+    </div>
+
+    <button id="confirmButton" class="btn btn-primary" disabled>Confirm Selection</button>
+
+    <script src="js/seat.js"></script>
+  </body>
+</html>

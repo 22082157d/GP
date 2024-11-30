@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+      body {
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+      }
+      h1 {
+        margin-top: 20px;
+        text-align: center;
+      }
+      h4 {
+        text-align: left;
+        margin-left: 20px;
+      }
+      footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        background-color: black;
+        color: white;
+        padding: 10px 0;
+      }
+      .btn-group {
+        justify-content: flex-start;
+      }
+      .btn {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>List of Users</h1>
+    <div id="usersContainer" class="container"></div>
+
+    <footer>
+      <p>22082157D Kwan Cheuk Lim - EIE4432 Group Project</p>
+      <p id="date-time"></p>
+    </footer>
+
+    <script src="js/users.js"></script>
+  </body>
+</html>

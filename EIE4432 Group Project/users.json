@@ -1,0 +1,9 @@
+[
+  { "username": "alice", "password": "ecila", "role": "user", "enabled": true },
+  { "username": "bob", "password": "bob1234", "role": "user", "enabled": false },
+  { "username": "janice", "password": "ecinaj", "role": "user", "enabled": true },
+  { "username": "root", "password": "root+pass", "role": "admin", "enabled": true },
+  { "username": "22082157d", "password": "22082157d", "role": "student", "enabled": true },
+  { "username": "lab4user", "password": "12345678", "role": "student", "enabled": true },
+  { "username": "2157Y", "password": "12345678", "role": "student", "enabled": true }
+]

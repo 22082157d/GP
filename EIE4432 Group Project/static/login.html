@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f8f9fa;
+      }
+      .form-container {
+        width: 300px;
+      }
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        background-color: black;
+        color: white;
+        padding: 10px 0;
+      }
+      .btn-group {
+        justify-content: flex-start;
+      }
+      .btn {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2 class="text-left">Login</h2>
+      <form action="/auth/login" method="POST">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" class="form-control" id="username" name="username" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" class="form-control" id="password" name="password" required />
+        </div>
+        <div class="btn-group">
+          <button type="button" class="btn btn-primary" id="loginButton">Login</button>
+          <a href="/register.html" class="btn btn-secondary">Register</a>
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      <p>22082157d Kwan Cheuk Lim - EIE4432 Group Project</p>
+      <p id="date-time"></p>
+    </footer>
+
+    <script>
+      const dateTimeElement = document.getElementById('date-time');
+      const now = new Date();
+      dateTimeElement.textContent = now.toLocaleString();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>

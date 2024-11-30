@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Promotion</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+      }
+      h1 {
+        margin-top: 20px;
+        text-align: center;
+      }
+      footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        background-color: black;
+        color: white;
+        padding: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Create New Promotion</h1>
+    <div class="container">
+      <form id="promotionForm">
+        <div class="form-group">
+          <label for="eventDate">Date/Time</label>
+          <input type="datetime-local" class="form-control" id="eventDate" required />
+        </div>
+        <div class="form-group">
+          <label for="eventTitle">Title</label>
+          <input type="text" class="form-control" id="eventTitle" required />
+        </div>
+        <div class="form-group">
+          <label for="venue">Venue</label>
+          <input type="text" class="form-control" id="venue" required />
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea class="form-control" id="description" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Save Event</button>
+      </form>
+    </div>
+    <footer>
+      <p>22082157D Kwan Cheuk Lim - EIE4432 Group Project</p>
+    </footer>
+
+    <script src="js/promotion.js"></script>
+  </body>
+</html>
